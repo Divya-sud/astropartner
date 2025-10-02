@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/remedyImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_image_24"
+            android:background="#EEE"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/remedyNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remedy Name"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/remedyDescInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Remedy Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/remedyPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price (₹)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/uploadRemedyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Remedy"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "61620141145",
+    "firebase_url": "https://helloastro-40466-default-rtdb.firebaseio.com",
+    "project_id": "helloastro-40466",
+    "storage_bucket": "helloastro-40466.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61620141145:android:0a74708d17989f65d94548",
+        "android_client_info": {
+          "package_name": "com.axis.helloastro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDffhkl7umEpUCQ_kld01RT1qmM-1jCUvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61620141145:android:75438427ce6c591bd94548",
+        "android_client_info": {
+          "package_name": "com.axis.helloastropartner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDffhkl7umEpUCQ_kld01RT1qmM-1jCUvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

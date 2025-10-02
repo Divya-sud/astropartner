@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Mobile Number -->
+        <EditText
+            android:id="@+id/etMobile"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/price"
+            android:hint="Price"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Language Dropdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Language"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/specification"
+            android:hint="What specialization have you"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/detail"
+            android:hint="Write detail of yourself"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/experince"
+            android:hint="What experince have you"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerExperince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+
+        <!--<LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Spinner
+                android:id="@+id/spinnerDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSlots"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp" />
+
+
+            <Button
+                android:id="@+id/btnAddSlot"
+                android:text="Add Slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnSaveSlots"
+                android:text="Save Slots"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3F51B5"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>-->
+
+
+
+        <!-- Weekly Time Slots Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Weekly Time Slots"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <!-- MONDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMonday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddMondaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Monday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+        <!-- TUESDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTuesday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddTuesdaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Tuesday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+        <!-- WEDNESDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerWednesday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddWednesdaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Wednesday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+        <!-- THURSDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerThursday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddThursdaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Thursday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+        <!-- FRIDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFriday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddFridaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Friday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+        <!-- SATURDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSaturday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddSaturdaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Saturday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+        <!-- SUNDAY -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSunday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddSundaySlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Slot for Sunday"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFF" />
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:text="Upload Aadhaar Card"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgAadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:contentDescription="Aadhaar Image Preview" />
+
+        <Button
+            android:id="@+id/btnUploadAadhaar"
+            android:text="Select Aadhaar Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- PAN Upload -->
+        <TextView
+            android:text="Upload PAN Card"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgPan"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#E0E0E0"
+            android:contentDescription="PAN Image Preview"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnUploadPan"
+            android:text="Select PAN Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Selfie Upload -->
+        <TextView
+            android:text="Upload Selfie"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgSelfie"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#E0E0E0"
+            android:contentDescription="Selfie Preview"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnUploadSelfie"
+            android:text="Take Selfie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Submit/Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:text="Register"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

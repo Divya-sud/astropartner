@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/totalEarningsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Earnings: ₹0"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/withdrawableText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdrawable: ₹0"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount to Withdraw"
+        android:inputType="number"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/requestPayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Payout"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

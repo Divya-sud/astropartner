@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">helloastropartner</string>
+    <string name="mobileHint">Phone Number *</string>
+    <string name="termsandconditions">By Continuing. you agree to our terms of Service Privacy Policy and Content Policy</string>
+    <string name="loginBtnText">Send OTP</string>
+    <string name="textOtpVer">OTP Verification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

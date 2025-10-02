@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.axis.helloastropartner"
+        minSdk 24           // ✅ Reduced to support most devices
+        targetSdk 35
+        versionCode 3
+        versionName "1.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '35.0.1'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Networking
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Android UI
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.airbnb.android:lottie:2.5.5'
+    implementation 'com.github.vipulasri:timelineview:1.1.5'
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Firebase
+    implementation platform("com.google.firebase:firebase-bom:33.13.0")
+    implementation "com.google.firebase:firebase-analytics"
+    implementation "com.google.firebase:firebase-auth"
+    implementation "com.google.firebase:firebase-firestore"
+    implementation "com.google.firebase:firebase-storage"
+    implementation "com.google.firebase:firebase-config"
+    implementation "com.google.android.gms:play-services-auth:21.3.0"
+    implementation "com.firebaseui:firebase-ui-firestore:8.0.2"
+    implementation "com.firebaseui:firebase-ui-database:8.0.2"
+
+    // Images & Utilities
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    implementation 'com.github.MikeOrtiz:TouchImageView:1.4.1'
+
+    // Payments & Reviews
+    implementation 'com.razorpay:checkout:1.6.41'
+    implementation 'com.google.android.play:review:2.0.2'
+    implementation 'com.google.android.play:app-update:2.1.0'
+
+    // Countdown timer & progress bar
+    implementation 'ir.samanjafari.easycountdowntimer:easycountdowntimer:2.5.0'
+    implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
+
+    // Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:17.0.2'
+    implementation 'com.hbb20:ccp:2.7.3'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}

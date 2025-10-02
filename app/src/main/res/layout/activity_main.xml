@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width = "match_parent"
+        android:layout_height = "400dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_grey">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height = "400dp"
+                android:src="@drawable/sara"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/cuisineTextLabel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="350dp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodeHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_textSize="18sp" />
+
+        <EditText
+            android:id="@+id/loginInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/countryCodeHolder"
+            android:hint="@string/mobileHint"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sendOtpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginContainer"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_background"
+        android:fontFamily="@font/open_sans_semibold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/loginBtnText"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/termsandconditions"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/open_sans"/>
+</RelativeLayout>
